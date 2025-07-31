@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.chronochain.common.enums.SignTypeEnum;
 
 @Data
 @Builder
@@ -22,4 +23,6 @@ public class ClientParameter {
     private Long timeout;
 
     private String locale;
+
+    private SignTypeEnum signType = SignTypeEnum.SHA256;
 }
