@@ -18,6 +18,7 @@
 
         <lombok-version>1.18.38</lombok-version>
         <retrofit2-version>3.0.0</retrofit2-version>
+        <okhttp-version>2.7.5</okhttp-version>
     </properties>
 
     <dependencyManagement>
@@ -74,6 +75,12 @@
             <groupId>com.squareup.retrofit2</groupId>
             <artifactId>converter-jackson</artifactId>
             <version>${retrofit2-version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.squareup.okhttp/okhttp -->
+        <dependency>
+            <groupId>com.squareup.okhttp</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>${okhttp-version}</version>
         </dependency>
     </dependencies>
 
