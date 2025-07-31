@@ -30,7 +30,7 @@ public class ApiClient {
         retrofit = new Retrofit.Builder()
                 .baseUrl(parameter.getBaseUrl())
                 .addConverterFactory(GsonConverterFactory.create())
-//                .client(httpClient())
+                .client(httpClient())
                 .build();
     }
 
